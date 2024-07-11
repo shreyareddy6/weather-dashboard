@@ -28,7 +28,7 @@ input[type="text"] {
   margin-right: 10px;
 }
 
-button {
+#search-button {
   padding: 0.5rem;
   background-color: #007bff;
   color: white;
@@ -36,7 +36,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#search-button:hover {
   background-color: #0056b3;
 }
 
@@ -53,5 +53,15 @@ button:hover {
 }
 
 .current-weather h2 {
-  font-weight: 50;
+  font-weight: bolder;
+}
+
+.recent-cities button {
+  padding: 0.5rem;
+  background-color: #515559;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

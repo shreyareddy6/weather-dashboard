@@ -65,6 +65,7 @@ function dsiplayFiveDaysData(weather) {
   const forecastH2 = document.createElement("h2");
 
   fiveDaysData.textContent = "";
+  forecastH2.textContent = "";
   forecastH2.textContent = "5-days Forecast:";
   fiveDaysDiv.append(forecastH2);
 

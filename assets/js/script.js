@@ -65,9 +65,11 @@ function dsiplayFiveDaysData(weather) {
   const forecastH2 = document.createElement("h2");
 
   fiveDaysData.textContent = "";
-  forecastH2.textContent = "";
-  forecastH2.textContent = "5-days Forecast:";
-  fiveDaysDiv.append(forecastH2);
+
+  if (forecastH2.textContent == "") {
+    forecastH2.textContent = "5-days Forecast:";
+    fiveDaysDiv.append(forecastH2);
+  }
 
   for (let i = 0; i < weather.list.length; i++) {
     const date = weather.list[i].dt_txt;

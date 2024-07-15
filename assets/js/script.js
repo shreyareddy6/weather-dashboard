@@ -65,7 +65,9 @@ function dsiplayFiveDaysData(weather) {
   const forecastH2 = document.createElement("h2");
 
   fiveDaysData.textContent = "";
+  fiveDaysDiv.textContent = "";
 
+  console.log("H2 " + forecastH2.textContent);
   if (forecastH2.textContent == "") {
     forecastH2.textContent = "5-days Forecast:";
     fiveDaysDiv.append(forecastH2);
@@ -76,8 +78,6 @@ function dsiplayFiveDaysData(weather) {
     // weather date object
     const weatherDate = new Date(date + "Z");
     if (weatherDate.getUTCHours() == 12) {
-      console.log("inside for");
-      console.log("weatherDate " + formatDate(weatherDate));
       const temp = weather.list[i].main.temp;
       const wind = weather.list[i].wind.speed;
       const humidity = weather.list[i].main.humidity;
